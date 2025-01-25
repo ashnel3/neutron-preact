@@ -1,0 +1,65 @@
+.app {
+  margin-top: 88px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.logo > svg {
+  display: inline-block;
+  height: 4em;
+  width: 4em;
+  padding: 1.5em;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.titlebar {
+  position: fixed;
+  display: flex;
+  height: 44px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin-right: 1rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #181818;
+}
+
+.titlebar > .dragarea {
+  height: 100%;
+  flex-grow: 1;
+}
+
+.titlebar > button {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  fill: #fff;
+  color: #fff;
+  border: none;
+  background-color: #181818;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.titlebar > button:active,
+.titlebar > button:hover {
+  background-color: #111;
+}
+
+#btn-close:active,
+#btn-close:hover {
+  color: red;
+  fill: red;
+}

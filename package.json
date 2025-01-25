@@ -1,0 +1,66 @@
+{
+  "name": "ahk-replay",
+  "version": "0.1.0",
+  "description": "Record & replay inputs",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "webpack serve",
+    "debug": "powershell -executionpolicy bypass script/IEChooser.ps1",
+    "build": "tsc -b && webpack --mode=production",
+    "fmt": "prettier -cw .",
+    "fmt-check": "prettier -l .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ashnel3/ahk-replay.git"
+  },
+  "keywords": [
+    "autohotkey",
+    "tas"
+  ],
+  "author": "ashnel3",
+  "license": "MIT",
+  "bugs": "https://github.com/ashnel3/ahk-replay/issues",
+  "homepage": "https://github.com/ashnel3/ahk-replay#readme",
+  "os": [
+    "win32"
+  ],
+  "engines": {
+    "node": ">= 18",
+    "pnpm": ">= 9"
+  },
+  "engineStrict": true,
+  "packageManager": "pnpm@9.15.2",
+  "dependencies": {
+    "@material-icons/svg": "^1.0.33",
+    "neutron": "github:G33kDude/Neutron.ahk#v2",
+    "preact": "^10.25.4",
+    "react": "npm:@preact/compat",
+    "react-dom": "npm:@preact/compat"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.25.9",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
+    "@babel/preset-typescript": "^7.26.0",
+    "@svgr/webpack": "^8.1.0",
+    "@types/node": "^22.10.7",
+    "babel-loader": "^9.2.1",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.0",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.3",
+    "husky": "^9.1.7",
+    "mini-css-extract-plugin": "^2.9.2",
+    "prettier": "^3.4.2",
+    "terser-webpack-plugin": "^5.3.11",
+    "typescript": "^5.7.3",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  }
+}
